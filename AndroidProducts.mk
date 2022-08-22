@@ -11,3 +11,11 @@ COMMON_LUNCH_CHOICES := \
     lineage_Mi439_4_19-user \
     lineage_Mi439_4_19-userdebug \
     lineage_Mi439_4_19-eng
+
+PRODUCT_MAKEFILES += \
+    $(LOCAL_DIR)/aosp_Mi439_4_19.mk
+
+COMMON_LUNCH_CHOICES += \
+    aosp_Mi439_4_19-user \
+    aosp_Mi439_4_19-userdebug \
+    aosp_Mi439_4_19-eng
