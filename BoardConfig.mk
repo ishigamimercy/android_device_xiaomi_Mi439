@@ -45,9 +45,8 @@ BOARD_BOOTIMG_HEADER_VERSION := 1
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_KERNEL_CMDLINE += androidboot.android_dt_dir=/non-existent androidboot.boot_devices=soc/7824900.sdhci
 BOARD_KERNEL_SEPARATED_DTBO := true
-TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_CONFIG := mi439-perf_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm439
+BOARD_PREBUILT_DTBOIMAGE := device/xiaomi/kernel-mithorium/Mi439/dtbo.img
+BOARD_VENDOR_KERNEL_MODULES += $(wildcard device/xiaomi/kernel-mithorium/Mi439/*.ko)
 
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
