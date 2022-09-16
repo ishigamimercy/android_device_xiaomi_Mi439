@@ -34,7 +34,7 @@ fi
 
 set -e
 
-export DEVICE=Mi439
+export DEVICE=Mi439_4_19
 export DEVICE_COMMON=mithorium-common
 export VENDOR=xiaomi
 
